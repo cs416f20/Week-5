@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+
+    <script>
+        let counter = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Increment the counter value by one and update h1 accordingly
+            document.querySelector('button').onclick =  () => {
+                document.querySelector('h1').innerHTML = ++counter;
+            };
+        });
+
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button>Click me</button>
+</body>
+</html>
